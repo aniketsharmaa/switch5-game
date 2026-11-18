@@ -1,0 +1,167 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0b1020;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+header h1 span {
+    color: #a78bfa;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 8px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 30px 0 20px;
+}
+
+.stat {
+    background: #192238;
+    border: 1px solid #293650;
+    border-radius: 13px;
+    padding: 14px 5px;
+}
+
+.stat small {
+    display: block;
+    color: #94a3b8;
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.stat strong {
+    font-size: 24px;
+}
+
+.message {
+    color: #c4b5fd;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 12px;
+    background: #151e32;
+    border: 1px solid #293650;
+    border-radius: 18px;
+}
+
+.tile {
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.12s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tile:active {
+    transform: scale(0.90);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #64748b;
+    font-size: 11px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    min-height: 580px;
+    background: rgba(7, 12, 25, 0.96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+.popup {
+    padding: 25px;
+    width: 100%;
+}
+
+.emoji {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.popup h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.popup p {
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.popup button {
+    width: 100%;
+    padding: 17px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup small {
+    display: block;
+    margin-top: 20px;
+    color: #64748b;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-height: 650px) {
+    .stats {
+        margin: 15px 0;
+    }
+
+    .grid {
+        gap: 6px;
+    }
+}

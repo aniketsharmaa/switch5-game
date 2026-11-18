@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0b1020">
+    <title>SWITCH 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <h1>SWITCH<span>5</span></h1>
+            <p>FIND THE ODD ONE OUT</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat">
+                <small>SCORE</small>
+                <strong id="score">0</strong>
+            </div>
+            <div class="stat">
+                <small>BEST</small>
+                <strong id="best">0</strong>
+            </div>
+            <div class="stat">
+                <small>TIME</small>
+                <strong id="timer">5.0</strong>
+            </div>
+        </section>
+
+        <div class="message" id="message">
+            Find the different colour!
+        </div>
+
+        <section id="grid" class="grid"></section>
+
+        <div class="bottom">
+            <p id="level">LEVEL 1</p>
+            <p>Think fast. Tap faster.</p>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <div class="popup">
+                <div class="emoji">🎯</div>
+                <h2>SWITCH 5</h2>
+                <p>Find the odd colour before time runs out.</p>
+                <button id="startBtn">PLAY NOW</button>
+                <small>Can you beat your high score?</small>
+            </div>
+        </div>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
